@@ -1,11 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main()
-{
+
+int main() {
     int n, p;
-    cin>>n>>p;
-    int a = p/2, b = n/2-p/2;
-    int res = (a < b) ? a : b;
-    cout<<res;
+    cin >> n >> p;
+
+    int a = p / 2;
+    int b = (n / 2) - a;
+
+    int res = min(a, b);
+
+    cout << res << endl;
+
     return 0;
 }
